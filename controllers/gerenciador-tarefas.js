@@ -37,7 +37,7 @@ function listarTarefas(req, res) {
 	// retornar
 	res.status(200).json({
 		totalItens: tarefasRetornar.length,
-		tarefa: tarefasRetornar.slice(0).splice((pagina - 1) * itensPorPagina, itensPorPagina),
+		tarefas: tarefasRetornar.slice(0).splice((pagina - 1) * itensPorPagina, itensPorPagina),
 		pagina: pagina
 	});
 }
